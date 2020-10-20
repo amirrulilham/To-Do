@@ -14,6 +14,9 @@ void main() async {
   });
   //NOTE: init getstorage to be used.
   await GetStorage.init();
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]);
   runApp(MyApp());
 }
 
